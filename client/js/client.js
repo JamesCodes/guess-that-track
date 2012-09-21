@@ -27,6 +27,8 @@ function Game() {
 	
 	this.setup = function() {
 		var closure = this;
+
+		// Listen for pusher evenets (new rounds)
 		round.bind('new', function(data) {
 
 			// parse response
@@ -40,6 +42,13 @@ function Game() {
 			closure.rounds.push(new Round(data));
 			closure.renderRound();
 
+		});
+
+		// Answers click bind
+		$('.guess a').bind("click", function(e) {
+			e.preventDefault();
+			closure.myAnswer = $(this).attr('data-track-id');
+			console.log("You answered:" + closure.myAnswer)
 		});
 	}
 
@@ -67,7 +76,7 @@ function Round(data) {
 	this.track = this.details.track;
 }
 
-
-var Game = new Game();
-Game.setup();
-
+$(document).ready(function() {
+	var game = new Game();
+	game.setup();
+});
