@@ -34,7 +34,9 @@
 	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
 
-	<script data-main="js/app" src="js/require.js"></script>
+	<script src="js/libs/jquery.js"></script>
+	<script src="js/libs/pusher.js"></script>
+	<script src="js/client.js"></script>
 </head>
 <body>
 
