@@ -41,6 +41,8 @@ function Game() {
 		// Listen for pusher evenets (new rounds)
 		round.bind('new', function(data) {
 
+			$('.user .answer').removeClass('incorrect').removeClass('correct');
+
 			// parse response
 			data = JSON.parse(data);
 			console.log(data);
@@ -114,11 +116,25 @@ function startTimer(){
 
 	var players = 15;
 
-	for (var i = players.length - 1; i >= 0; i--) {
+	for (var i = 0; i < players; i++) {
+		
+		var answer = Math.round(Math.random());
+		
+		
 
-		var answer = Math.floor(Math.random());
+		var randomTime = Math.round(Math.random() * 3000) + 0;
 
-		console.log(answer);
-		//players[i]
+		setTimeout("randomAnswer(" + i + "," + answer + ")", randomTime);
 	};
+}
+
+function randomAnswer(user, answer){
+
+	if(answer == 0){
+		answer = 'correct';
+	}else{
+		answer = 'incorrect';
+	}
+
+	$('.user .answer').eq(user + 1).addClass(answer)
 }

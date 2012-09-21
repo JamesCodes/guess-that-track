@@ -84,6 +84,7 @@ header{
     margin: 50px;
 
     .countdown{
+        display: none;
         @include novecento-reg;
         font-size: 4.28571em;
 
@@ -174,7 +175,7 @@ header{
                 text-decoration: none;
                 background: #000;
                 color: #FFF;
-                padding: 10px 0;
+                padding: 10px 20px;
                 font-size: 1.42857em;
                 min-width: 250px;
                 display: inline-block;

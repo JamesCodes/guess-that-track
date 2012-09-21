@@ -38,6 +38,7 @@ header {
   text-align: center;
   margin: 50px; }
   .game .countdown {
+    display: none;
     font-family: 'NovecentowideNormalRegular', Helvetica, Arial, Sans-Serif;
     font-size: 4.28571em; }
     .game .countdown.go {
@@ -99,7 +100,7 @@ header {
     text-decoration: none;
     background: #000;
     color: #FFF;
-    padding: 10px 0;
+    padding: 10px 20px;
     font-size: 1.42857em;
     min-width: 250px;
     display: inline-block;
