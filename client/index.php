@@ -94,112 +94,112 @@
 		<div class="two columns user you">
 			<div class="answer"></div>
 			<div class="placeholder">
-				<i class="icon-music"></i>
+				<img src="https://graph.facebook.com/graemem5/picture" />
 			</div>
 		</div>
 
 		<div class="two columns user">
 			<div class="answer"></div>
 			<div class="placeholder">
-				<i class="icon-music"></i>
+				<img src="https://graph.facebook.com/36911252/picture" />
 			</div>
 		</div>
 
 		<div class="two columns user">
 			<div class="answer"></div>
 			<div class="placeholder">
-				<i class="icon-music"></i>
+				<img src="https://graph.facebook.com/36916898/picture" />
 			</div>
 		</div>
 
 		<div class="two columns user">
 			<div class="answer"></div>
 			<div class="placeholder">
-				<i class="icon-music"></i>
+				<img src="https://graph.facebook.com/61012127/picture" />
 			</div>
 		</div>
 
 		<div class="two columns user">
 			<div class="answer"></div>
 			<div class="placeholder">
-				<i class="icon-music"></i>
+				<img src="https://graph.facebook.com/61013492/picture" />
 			</div>
 		</div>
 
 		<div class="two columns user">
 			<div class="answer"></div>
 			<div class="placeholder">
-				<i class="icon-music"></i>
+				<img src="https://graph.facebook.com/61101410/picture" />
 			</div>
 		</div>
 
 		<div class="two columns user">
 			<div class="answer"></div>
 			<div class="placeholder">
-				<i class="icon-music"></i>
+				<img src="https://graph.facebook.com/197816236/picture" />
 			</div>
 		</div>
 
 		<div class="two columns user">
 			<div class="answer"></div>
 			<div class="placeholder">
-				<i class="icon-music"></i>
+				<img src="https://graph.facebook.com/199707189/picture" />
 			</div>
 		</div>
 
 		<div class="two columns user">
 			<div class="answer"></div>
 			<div class="placeholder">
-				<i class="icon-music"></i>
+				<img src="https://graph.facebook.com/218100552/picture" />
 			</div>
 		</div>
 
 		<div class="two columns user">
 			<div class="answer"></div>
 			<div class="placeholder">
-				<i class="icon-music"></i>
+				<img src="https://graph.facebook.com/500617977/picture" />
 			</div>
 		</div>
 
 		<div class="two columns user">
 			<div class="answer"></div>
 			<div class="placeholder">
-				<i class="icon-music"></i>
+				<img src="https://graph.facebook.com/504048158/picture" />
 			</div>
 		</div>
 
 		<div class="two columns user">
 			<div class="answer"></div>
 			<div class="placeholder">
-				<i class="icon-music"></i>
+				<img src="https://graph.facebook.com/511058249/picture" />
 			</div>
 		</div>
 
 		<div class="two columns user">
 			<div class="answer"></div>
 			<div class="placeholder">
-				<i class="icon-music"></i>
+				<img src="https://graph.facebook.com/513045560/picture" />
 			</div>
 		</div>
 
 		<div class="two columns user">
 			<div class="answer"></div>
 			<div class="placeholder">
-				<i class="icon-music"></i>
+				<img src="https://graph.facebook.com/514602070/picture" />
 			</div>
 		</div>
 
 		<div class="two columns user">
 			<div class="answer"></div>
 			<div class="placeholder">
-				<i class="icon-music"></i>
+				<img src="https://graph.facebook.com/515141950/picture" />
 			</div>
 		</div>
 
 		<div class="two columns user">
 			<div class="answer"></div>
 			<div class="placeholder">
-				<i class="icon-music"></i>
+				<img src="https://graph.facebook.com/520063736/picture" />
 			</div>
 		</div>		
 
