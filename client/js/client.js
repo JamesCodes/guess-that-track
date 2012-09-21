@@ -3,6 +3,9 @@
 var feeder = new Pusher("6713f57b7b14ab10a724");
 var round = feeder.subscribe('rounds');
 
+// Audio
+var audio = null;
+
 // Game
 function Game() {
 
@@ -10,6 +13,7 @@ function Game() {
 	this.rounds = [];
 	this.round = 0;
 	this.myAnswer = "";
+	this.audio = null;
 	
 	this.renderRound = function() {
 
@@ -18,7 +22,9 @@ function Game() {
 		var mp3 = thisRound.mp3;
 
 		// Add audio
-		$('#player audio source').attr('src', mp3)
+		// $('#player audio source').attr('src', mp3)
+		if(this.audio!=null) this.audio.stop();
+		this.audio = new buzz.sound(mp3, { autoplay: true });
 		
 		// Add answers
 		for (var i = answers.length - 1; i >= 0; i--) {

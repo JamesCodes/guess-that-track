@@ -36,6 +36,7 @@
 
 	<script src="js/libs/jquery.js"></script>
 	<script src="js/libs/pusher.js"></script>
+	<script src="js/buzz.js"></script>
 	<script src="js/client.js"></script>
 </head>
 <body>
@@ -83,9 +84,6 @@
 			<span class="countdown go">Go!</span>
 			<div class="countdown-bar"><div class="amount"></div></div>
 			<div id="player">
-					<audio controls="controls">
-						<source type="audio/mp3">
-					</audio>
 			</div>
 		</div>
 
