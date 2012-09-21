@@ -22,18 +22,37 @@ class Round {
 
 	function pullRound() {
 
-		return '{ 
-			"track": "' . $this->track[0] . '" ,
-			"mp3": "' . $this->track[2] . '",
-			"answers": [
-				"' . $this->track[0] . '",
-				"' . $this->answers[1] . '",
-				"' . $this->answers[2] . '",
-				"' . $this->answers[3] . '"
-			]
 
-		}';
+		$randomTrack = $this->getRandomTrack();
+		
+		return '{ "track": "' . $randomTrack->title . '", 
+		 			"mp3": "' . $randomTrack->preview . '", 
+		 			"answers": ["' . $this->getRandomAnswer() . '",
+		 			"' . $this->getRandomAnswer() . '", 
+		 			"' . $this->getRandomAnswer() . '", 
+		 			"' . $this->getRandomAnswer() . '"] 
+		 		}';
+	}
 
+	function getRandomTrack(){
+		$randomTrackId = rand(1000000, 15000000);
+
+		$deezerUrl = "http://api.deezer.com/2.0/track/$randomTrackId";
+		$ch = curl_init(); 
+		$timeout = 10;
+		curl_setopt($ch, CURLOPT_URL, $deezerUrl);
+		curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, $timeout);
+		curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+		$data = curl_exec($ch);
+		curl_close($ch);
+
+		return json_decode($data);
+
+	}
+
+	function getRandomAnswer(){
+		$track = $this->getRandomTrack();
+		return $track->title;
 	}
 }
 
