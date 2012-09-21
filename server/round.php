@@ -25,9 +25,13 @@ class Round {
 
 		$randomTrack = $this->getRandomTrack();
 		
-		return "{ 'track': '" . $randomTrack->title . "', 
-		 			'mp3': '". $randomTrack->preview ."', 
-		 			answers: ['" . $this->getRandomAnswer() . "', '" . $this->getRandomAnswer() . "', '" . $this->getRandomAnswer() . "', '" . $this->getRandomAnswer() . "'] }";
+		return '{ "track": "' . $randomTrack->title . '", 
+		 			"mp3": "' . $randomTrack->preview . '", 
+		 			"answers": ["' . $this->getRandomAnswer() . '",
+		 			"' . $this->getRandomAnswer() . '", 
+		 			"' . $this->getRandomAnswer() . '", 
+		 			"' . $this->getRandomAnswer() . '"] 
+		 		}';
 	}
 
 	function getRandomTrack(){
