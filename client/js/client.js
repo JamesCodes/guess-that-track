@@ -7,28 +7,57 @@ var round = feeder.subscribe('rounds');
 function Game() {
 
 	this.name = "FB Game";
-	this.round = null;
+	this.rounds = [];
+	this.round = 0;
+	this.myAnswer = "";
 	
 	this.renderRound = function() {
-		console.log(this.round.details);
+		console.log(this.rounds[this.round].track);
 		$(".container").html(
-			this.round.track
+			this.rounds[this.round].track
 		);
+
+		// next round 
+		this.round++;
 	};
 	
 	this.setup = function() {
 		var closure = this;
 		round.bind('new', function(data) {
-			closure.round = new Round(data);
+
+			// parse response
+			data = JSON.parse(data);
+			console.log(data);
+
+			// Show Answer
+			if(closure.round>0) closure.showAnswer();
+
+			// New Round
+			closure.rounds.push(new Round(data));
 			closure.renderRound();
 
 		});
+	}
+
+	this.answer = function(answer) {
+		this.myAnswer = answer;
+	}
+
+	this.showAnswer = function(answer) {
+
+		lastRoundAnswer = this.rounds[this.round-1].track;
+
+		if(this.myAnswer==lastRoundAnswer) {
+			console.log('correct');
+		} else {
+			console.log('incorrect');
+		}
 	}
 }
 
 
 function Round(data) {
-	this.details = JSON.parse(data);
+	this.details = data;
 	this.mp3 = this.details.mp3;
 	this.answers = this.details.answers;
 	this.track = this.details.track;
