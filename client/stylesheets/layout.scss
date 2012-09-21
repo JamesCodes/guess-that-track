@@ -1,0 +1,199 @@
+/*
+* Skeleton V1.2
+* Copyright 2011, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 6/20/2012
+*/
+
+/* Table of Content
+==================================================
+	#Site Styles
+	#Page Styles
+	#Media Queries
+	#Font-Face */
+
+@mixin default-font{
+    line-height: 1em;
+    font-weight: normal;
+}
+
+@mixin pt-sans-reg{
+    font-family: 'PTSansCaptionRegular', Helvetica, Arial, Sans-Serif;
+}
+
+@mixin pt-sans-bold{
+    font-family: 'PTSansCaptionBold', Helvetica, Arial, Sans-Serif;
+}
+
+@mixin novecento-reg{
+    font-family: 'NovecentowideNormalRegular', Helvetica, Arial, Sans-Serif;
+}
+
+@mixin novecento-bold{
+    font-family: 'NovecentowideBookBold', Helvetica, Arial, Sans-Serif;
+}
+
+@mixin text-shadow{
+    text-shadow: 1px 1px 0px #FFFFFF;
+    filter: dropshadow(color=#FFFFFF, offx=1, offy=1);    
+}
+
+@mixin transitions{
+    -webkit-transition: all 200ms linear;
+    -moz-transition: all 200ms linear;
+    -ms-transition: all 200ms linear;
+    -o-transition: all 200ms linear;
+    transition: all 200ms linear;
+}
+
+/* #Site Styles
+================================================== */
+
+body{
+    background: url(../images/use_your_illusion.png);
+}
+
+h1, h2, h3, h4, h5, h6{
+    @include novecento-bold;
+}
+
+header{
+    text-align: center;
+    padding: 2em 0;
+
+    h1{
+        font-size: 4.28571em;
+    }
+
+    h2{
+        font-size: 2.14286em;
+    }
+}
+
+.game{
+    text-align: center;
+    margin-bottom: 20px;
+
+    .countdown{
+        @include novecento-reg;
+        font-size: 4.28571em;
+
+        &.go{
+            @include novecento-bold;
+        }
+    }
+}
+
+.user{
+    .placeholder{
+        background: grey;
+        padding: 20px 0 12px;
+        margin-bottom: 20px;
+        text-align: center;
+
+        i{
+            font-size: 3em;
+        }
+    }
+}
+
+.guess{
+    text-align: center;
+    margin-top: 20px;
+
+    h2{
+        text-align: center;
+    }
+
+    ul{
+        li{
+            a{
+                @include novecento-reg;
+                text-decoration: none;
+                background: #000;
+                color: #FFF;
+                padding: 10px 0;
+                font-size: 1.42857em;
+                min-width: 250px;
+                display: inline-block;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+/* #Page Styles
+================================================== */
+
+/* #Media Queries
+================================================== */
+
+	/* Smaller than standard 960 (devices and browsers) */
+	@media only screen and (max-width: 959px) {}
+
+	/* Tablet Portrait size to standard 960 (devices and browsers) */
+	@media only screen and (min-width: 768px) and (max-width: 959px) {}
+
+	/* All Mobile Sizes (devices and browser) */
+	@media only screen and (max-width: 767px) {}
+
+	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+	@media only screen and (min-width: 480px) and (max-width: 767px) {}
+
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 479px) {}
+
+
+/* #Font-Face
+================================================== */
+//* Fonts */
+
+@font-face {
+    font-family: 'NovecentowideNormalRegular';
+    src: url('../fonts/novecentowide-normal-webfont.eot');
+    src: url('../fonts/novecentowide-normal-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/novecentowide-normal-webfont.woff') format('woff'),
+         url('../fonts/novecentowide-normal-webfont.ttf') format('truetype'),
+         url('../fonts/novecentowide-normal-webfont.svg#NovecentowideNormalRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'NovecentowideBookBold';
+    src: url('../fonts/novecentowide-bold-webfont.eot');
+    src: url('../fonts/novecentowide-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/novecentowide-bold-webfont.woff') format('woff'),
+         url('../fonts/novecentowide-bold-webfont.ttf') format('truetype'),
+         url('../fonts/novecentowide-bold-webfont.svg#NovecentowideBookBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'PTSansCaptionRegular';
+    src: url('../fonts/ptc55f-webfont.eot');
+    src: url('../fonts/ptc55f-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ptc55f-webfont.woff') format('woff'),
+         url('../fonts/ptc55f-webfont.ttf') format('truetype'),
+         url('../fonts/ptc55f-webfont.svg#PTSansCaptionRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'PTSansCaptionBold';
+    src: url('../fonts/ptc75f-webfont.eot');
+    src: url('../fonts/ptc75f-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ptc75f-webfont.woff') format('woff'),
+         url('../fonts/ptc75f-webfont.ttf') format('truetype'),
+         url('../fonts/ptc75f-webfont.svg#PTSansCaptionBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
