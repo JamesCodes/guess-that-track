@@ -43,14 +43,17 @@ header {
     .game .countdown.go {
       font-family: 'NovecentowideBookBold', Helvetica, Arial, Sans-Serif; }
 
+.players {
+  text-align: center; }
+
 .user .placeholder {
-  background: #33FF99;
+  background: #000;
   padding: 20px 0 12px;
   margin-bottom: 20px;
   text-align: center; }
   .user .placeholder i {
     font-size: 3em;
-    color: #000; }
+    color: #33FF99; }
 
 .guess {
   text-align: center;

@@ -84,6 +84,10 @@
 			<div id="player"></div>
 		</div>
 
+		<div class="sixteen columns players">
+			<h2>Who is playing</h2>
+		</div>
+
 		<div class="two columns user">
 			<div class="placeholder">
 				<i class="icon-music"></i>
