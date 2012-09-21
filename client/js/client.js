@@ -12,10 +12,14 @@ function Game() {
 	this.myAnswer = "";
 	
 	this.renderRound = function() {
-		console.log(this.rounds[this.round].track);
-		$(".container").html(
-			this.rounds[this.round].track
-		);
+
+		var thisRound = this.rounds[this.round]
+		var answers = thisRound.answers;
+		
+		// Add answers
+		for (var i = answers.length - 1; i >= 0; i--) {
+			$('.guess ul li:nth-child(' + (i + 1) + ') a').text(answers[i]);
+		};
 
 		// next round 
 		this.round++;
