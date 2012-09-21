@@ -103,6 +103,7 @@ function startTimer(){
 
 	var count = 0;
 
+	// Timer bar
 	var time = setInterval(function(){
 		count++;
 		$('.game .countdown-bar .amount').css('width', count + '%');
@@ -110,4 +111,14 @@ function startTimer(){
 		if(count >= 100) clearInterval(time);
 	}, 1000/30);
 
+
+	var players = 15;
+
+	for (var i = players.length - 1; i >= 0; i--) {
+
+		var answer = Math.floor(Math.random());
+
+		console.log(answer);
+		//players[i]
+	};
 }
