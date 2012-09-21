@@ -29,7 +29,7 @@ class Round {
 		 			"mp3": "' . $randomTrack->preview . '", 
 		 			"answers": ["' . $this->getRandomAnswer() . '",
 		 			"' . $this->getRandomAnswer() . '", 
-		 			"' . $this->getRandomAnswer() . '", 
+		 			"' . $randomTrack->title . '", 
 		 			"' . $this->getRandomAnswer() . '"] 
 		 		}';
 	}
