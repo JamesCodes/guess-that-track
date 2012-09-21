@@ -53,6 +53,32 @@
 			<h2>As quick as you can!</h2>
 		</header>
 
+		<div class="login">
+			<div id="fb-root"></div>
+			<script>
+			window.fbAsyncInit = function() {
+			  FB.init({
+			    appId      : '145963522215015', // App ID
+			    channelUrl : '//http://guess-that-track.herokuapp.com/channel.html', // Channel File
+			    status     : true, // check login status
+			    cookie     : true, // enable cookies to allow the server to access the session
+			    xfbml      : true  // parse XFBML
+			  });
+			  // Additional initialization code here
+			};
+			// Load the SDK Asynchronously
+			(function(d){
+			   var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
+			   if (d.getElementById(id)) {return;}
+			   js = d.createElement('script'); js.id = id; js.async = true;
+			   js.src = "//connect.facebook.net/en_US/all.js";
+			   ref.parentNode.insertBefore(js, ref);
+			 }(document));
+			</script>
+
+			<div class="fb-login-button">Login with Facebook</div>
+		</div>
+
 		<div class="sixteen columns game">
 			<span class="countdown go">Go!</span>
 			<div id="player"></div>
