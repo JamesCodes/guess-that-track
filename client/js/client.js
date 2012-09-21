@@ -15,6 +15,10 @@ function Game() {
 
 		var thisRound = this.rounds[this.round]
 		var answers = thisRound.answers;
+		var mp3 = thisRound.mp3;
+
+		// Add audio
+		$('#player audio source').attr('src', mp3)
 		
 		// Add answers
 		for (var i = answers.length - 1; i >= 0; i--) {
@@ -40,6 +44,7 @@ function Game() {
 			closure.rounds.push(new Round(data));
 			closure.renderRound();
 
+			startTimer();
 		});
 	}
 
@@ -65,6 +70,19 @@ function Round(data) {
 	this.mp3 = this.details.mp3;
 	this.answers = this.details.answers;
 	this.track = this.details.track;
+}
+
+function startTimer(){
+
+	var count = 0;
+
+	var time = setInterval(function(){
+		count++;
+		$('.game .countdown-bar .amount').css('width', count + '%');
+
+		if(count >= 100) clearInterval(time);
+	}, 1000/30);
+
 }
 
 

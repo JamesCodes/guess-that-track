@@ -1,7 +1,7 @@
 define(function(){
   var mp3 = {
     player: function(){
-      $(document).ready(function(){
+      /*$(document).ready(function(){
         $("#player").jPlayer({
           ready: function () {
             $(this).jPlayer("setMedia", {
@@ -11,7 +11,7 @@ define(function(){
           swfPath: "/js",
           supplied: "mp3"
         });
-      });
+      });*/
     }
   }
   return mp3;

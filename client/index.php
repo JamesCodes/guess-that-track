@@ -81,8 +81,12 @@
 
 		<div class="sixteen columns game">
 			<span class="countdown go">Go!</span>
-			<div class="countdown-circle"></div>
-			<div id="player"></div>
+			<div class="countdown-bar"><div class="amount"></div></div>
+			<div id="player">
+					<audio controls="controls">
+						<source type="audio/mp3">
+					</audio>
+			</div>
 		</div>
 
 		<div class="sixteen columns players">

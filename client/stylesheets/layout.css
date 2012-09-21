@@ -42,17 +42,14 @@ header {
     font-size: 4.28571em; }
     .game .countdown.go {
       font-family: 'NovecentowideBookBold', Helvetica, Arial, Sans-Serif; }
-  .game .countdown-circle {
-    margin: 0 auto;
-    width: 0;
-    height: 0;
-    border-right: 60px solid #33FF99;
-    border-top: 60px solid #33FF99;
-    border-left: 60px solid transparent;
-    border-bottom: 60px solid #33FF99;
-    border-radius: 60px;
-    -moz-border-radius: 60px;
-    -webkit-border-radius: 60px; }
+  .game .countdown-bar {
+    width: 100%;
+    background: #000;
+    height: 50px; }
+    .game .countdown-bar .amount {
+      background: #33FF99;
+      height: 100%;
+      width: 0%; }
 
 .players {
   text-align: center; }
