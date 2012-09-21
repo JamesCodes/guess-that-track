@@ -21,9 +21,19 @@ class Round {
 	}
 
 	function pullRound() {
-		return "{ 'track': '" . $this->track[0] . "', 
-					'mp3': 'http://cdn-preview-a.deezer.com/stream/a4e149e52e2ffdc4f057661b40ba7ee3-1.mp3', 
-					answers: ['" . $this->answers[0] . "', '" . $this->answers[1] . "', '" . $this->answers[2] . "', '" . $this->answers[3] . "'] }";
+
+		return '{ 
+			"track": "' . $this->track[0] . '" ,
+			"mp3": "http://cdn-preview-a.deezer.com/stream/a4e149e52e2ffdc4f057661b40ba7ee3-1.mp3",
+			"answers": [
+				"' . $this->answers[0] . '",
+				"' . $this->answers[1] . '",
+				"' . $this->answers[2] . '",
+				"' . $this->answers[3] . '"
+			]
+
+		}';
+
 	}
 }
 
