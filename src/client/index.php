@@ -8,9 +8,9 @@
 	<!-- Basic Page Needs
   ================================================== -->
 	<meta charset="utf-8">
-	<title>Your Page Title Here :)</title>
-	<meta name="description" content="">
-	<meta name="author" content="">
+	<title>Guess That Track</title>
+	<meta name="description" content="Facebook Hackday App">
+	<meta name="author" content="Cohaesus">
 
 	<!-- Mobile Specific Metas
   ================================================== -->
@@ -48,7 +48,7 @@
 
 	<div class="container">
 		<div class="sixteen columns">
-			<h1 class="remove-bottom" style="margin-top: 40px">Skeleton</h1>
+			<h1 class="remove-bottom" style="margin-top: 40px">Guess That Track</h1>
 			<h5>Version 1.2</h5>
 			<hr />
 		</div>
