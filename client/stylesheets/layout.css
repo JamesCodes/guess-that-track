@@ -6,53 +6,96 @@
 * http://www.opensource.org/licenses/mit-license.php
 * 6/20/2012
 */
-
 /* Table of Content
 ==================================================
 	#Site Styles
 	#Page Styles
 	#Media Queries
 	#Font-Face */
-
 /* #Site Styles
 ================================================== */
+body {
+  background: url(../images/use_your_illusion.png); }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'NovecentowideBookBold', Helvetica, Arial, Sans-Serif; }
+
+header {
+  text-align: center;
+  padding: 2em 0; }
+  header h1 {
+    font-size: 4.28571em; }
+  header h2 {
+    font-size: 2.14286em; }
+
+.game {
+  text-align: center;
+  margin-bottom: 20px; }
+  .game .countdown {
+    font-family: 'NovecentowideNormalRegular', Helvetica, Arial, Sans-Serif;
+    font-size: 4.28571em; }
+    .game .countdown.go {
+      font-family: 'NovecentowideBookBold', Helvetica, Arial, Sans-Serif; }
+
+.user .placeholder {
+  background: grey;
+  padding: 20px 0 12px;
+  margin-bottom: 20px;
+  text-align: center; }
+  .user .placeholder i {
+    font-size: 3em; }
+
+.guess {
+  text-align: center;
+  margin-top: 20px; }
+  .guess h2 {
+    text-align: center; }
+  .guess ul li a {
+    font-family: 'NovecentowideNormalRegular', Helvetica, Arial, Sans-Serif;
+    text-decoration: none;
+    background: #000;
+    color: #FFF;
+    padding: 10px 0;
+    font-size: 1.42857em;
+    min-width: 250px;
+    display: inline-block;
+    cursor: pointer; }
 
 /* #Page Styles
 ================================================== */
-
 /* #Media Queries
 ================================================== */
-
-	/* Smaller than standard 960 (devices and browsers) */
-	@media only screen and (max-width: 959px) {}
-
-	/* Tablet Portrait size to standard 960 (devices and browsers) */
-	@media only screen and (min-width: 768px) and (max-width: 959px) {}
-
-	/* All Mobile Sizes (devices and browser) */
-	@media only screen and (max-width: 767px) {}
-
-	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
-	@media only screen and (min-width: 480px) and (max-width: 767px) {}
-
-	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
-	@media only screen and (max-width: 479px) {}
-
-
+/* Smaller than standard 960 (devices and browsers) */
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+/* All Mobile Sizes (devices and browser) */
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 /* #Font-Face
 ================================================== */
-/* 	This is the proper syntax for an @font-face file
-		Just create a "fonts" folder at the root,
-		copy your FontName into code below and remove
-		comment brackets */
+@font-face {
+  font-family: 'NovecentowideNormalRegular';
+  src: url("../fonts/novecentowide-normal-webfont.eot");
+  src: url("../fonts/novecentowide-normal-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/novecentowide-normal-webfont.woff") format("woff"), url("../fonts/novecentowide-normal-webfont.ttf") format("truetype"), url("../fonts/novecentowide-normal-webfont.svg#NovecentowideNormalRegular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
 
-/*	@font-face {
-	    font-family: 'FontName';
-	    src: url('../fonts/FontName.eot');
-	    src: url('../fonts/FontName.eot?iefix') format('eot'),
-	         url('../fonts/FontName.woff') format('woff'),
-	         url('../fonts/FontName.ttf') format('truetype'),
-	         url('../fonts/FontName.svg#webfontZam02nTh') format('svg');
-	    font-weight: normal;
-	    font-style: normal; }
-*/
+@font-face {
+  font-family: 'NovecentowideBookBold';
+  src: url("../fonts/novecentowide-bold-webfont.eot");
+  src: url("../fonts/novecentowide-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/novecentowide-bold-webfont.woff") format("woff"), url("../fonts/novecentowide-bold-webfont.ttf") format("truetype"), url("../fonts/novecentowide-bold-webfont.svg#NovecentowideBookBold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'PTSansCaptionRegular';
+  src: url("../fonts/ptc55f-webfont.eot");
+  src: url("../fonts/ptc55f-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/ptc55f-webfont.woff") format("woff"), url("../fonts/ptc55f-webfont.ttf") format("truetype"), url("../fonts/ptc55f-webfont.svg#PTSansCaptionRegular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'PTSansCaptionBold';
+  src: url("../fonts/ptc75f-webfont.eot");
+  src: url("../fonts/ptc75f-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/ptc75f-webfont.woff") format("woff"), url("../fonts/ptc75f-webfont.ttf") format("truetype"), url("../fonts/ptc75f-webfont.svg#PTSansCaptionBold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
