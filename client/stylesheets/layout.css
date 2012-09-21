@@ -18,7 +18,8 @@ body {
   background: url(../images/use_your_illusion.png); }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'NovecentowideBookBold', Helvetica, Arial, Sans-Serif; }
+  font-family: 'NovecentowideBookBold', Helvetica, Arial, Sans-Serif;
+  color: #33FF99; }
 
 header {
   text-align: center;
@@ -28,22 +29,65 @@ header {
   header h2 {
     font-size: 2.14286em; }
 
+.fb-login-button {
+  margin: 0 auto;
+  width: 152px;
+  display: block !important; }
+
 .game {
   text-align: center;
-  margin-bottom: 20px; }
+  margin: 50px; }
   .game .countdown {
     font-family: 'NovecentowideNormalRegular', Helvetica, Arial, Sans-Serif;
     font-size: 4.28571em; }
     .game .countdown.go {
       font-family: 'NovecentowideBookBold', Helvetica, Arial, Sans-Serif; }
+  .game .countdown-bar {
+    width: 100%;
+    background: #000;
+    height: 50px; }
+    .game .countdown-bar .amount {
+      background: #33FF99;
+      height: 100%;
+      width: 0%; }
 
-.user .placeholder {
-  background: grey;
-  padding: 20px 0 12px;
-  margin-bottom: 20px;
+.players {
   text-align: center; }
-  .user .placeholder i {
-    font-size: 3em; }
+
+.user {
+  position: relative; }
+  .user .placeholder {
+    background: #000;
+    padding: 20px 0 12px;
+    margin-bottom: 20px;
+    text-align: center; }
+    .user .placeholder i {
+      font-size: 3em;
+      color: #33FF99; }
+  .user .answer {
+    height: 64px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0; }
+    .user .answer.incorrect {
+      background: #FF2B36; }
+      .user .answer.incorrect:after {
+        content: 'wrong!';
+        font-family: 'NovecentowideNormalRegular', Helvetica, Arial, Sans-Serif;
+        text-align: center;
+        color: #000;
+        display: block;
+        padding-top: 21px; }
+    .user .answer.correct {
+      background: #4DFF35; }
+      .user .answer.correct:after {
+        content: 'right!';
+        font-family: 'NovecentowideNormalRegular', Helvetica, Arial, Sans-Serif;
+        text-align: center;
+        color: #000;
+        display: block;
+        padding-top: 21px; }
 
 .guess {
   text-align: center;
@@ -59,7 +103,15 @@ header {
     font-size: 1.42857em;
     min-width: 250px;
     display: inline-block;
-    cursor: pointer; }
+    cursor: pointer;
+    -webkit-transition: all 200ms linear;
+    -moz-transition: all 200ms linear;
+    -ms-transition: all 200ms linear;
+    -o-transition: all 200ms linear;
+    transition: all 200ms linear; }
+    .guess ul li a:hover {
+      background: #33FF99;
+      color: #000; }
 
 /* #Page Styles
 ================================================== */

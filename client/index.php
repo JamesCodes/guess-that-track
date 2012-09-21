@@ -34,7 +34,10 @@
 	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
 
-	<script data-main="js/app" src="js/require.js"></script>
+	<script src="js/libs/jquery.js"></script>
+	<script src="js/libs/pusher.js"></script>
+	<script src="js/buzz.js"></script>
+	<script src="js/client.js"></script>
 </head>
 <body>
 
@@ -74,109 +77,131 @@
 			 }(document));
 			</script>
 
-			<div class="fb-login-button">Login with Facebook</div>
+			<div class="fb-login-button" scope="">Login with Facebook</div>
 		</div>
 
 		<div class="sixteen columns game">
 			<span class="countdown go">Go!</span>
-			<div id="player"></div>
+			<div class="countdown-bar"><div class="amount"></div></div>
+			<div id="player">
+			</div>
 		</div>
 
-		<div class="two columns user">
+		<div class="sixteen columns players">
+			<h2>Who is playing</h2>
+		</div>
+
+		<div class="two columns user you">
+			<div class="answer"></div>
 			<div class="placeholder">
 				<i class="icon-music"></i>
 			</div>
 		</div>
 
 		<div class="two columns user">
+			<div class="answer"></div>
 			<div class="placeholder">
 				<i class="icon-music"></i>
 			</div>
 		</div>
 
 		<div class="two columns user">
+			<div class="answer"></div>
 			<div class="placeholder">
 				<i class="icon-music"></i>
 			</div>
 		</div>
 
 		<div class="two columns user">
+			<div class="answer"></div>
 			<div class="placeholder">
 				<i class="icon-music"></i>
 			</div>
 		</div>
 
 		<div class="two columns user">
+			<div class="answer"></div>
 			<div class="placeholder">
 				<i class="icon-music"></i>
 			</div>
 		</div>
 
 		<div class="two columns user">
+			<div class="answer"></div>
 			<div class="placeholder">
 				<i class="icon-music"></i>
 			</div>
 		</div>
 
 		<div class="two columns user">
+			<div class="answer"></div>
 			<div class="placeholder">
 				<i class="icon-music"></i>
 			</div>
 		</div>
 
 		<div class="two columns user">
+			<div class="answer"></div>
 			<div class="placeholder">
 				<i class="icon-music"></i>
 			</div>
 		</div>
 
 		<div class="two columns user">
+			<div class="answer"></div>
 			<div class="placeholder">
 				<i class="icon-music"></i>
 			</div>
 		</div>
 
 		<div class="two columns user">
+			<div class="answer"></div>
 			<div class="placeholder">
 				<i class="icon-music"></i>
 			</div>
 		</div>
 
 		<div class="two columns user">
+			<div class="answer"></div>
 			<div class="placeholder">
 				<i class="icon-music"></i>
 			</div>
 		</div>
 
 		<div class="two columns user">
+			<div class="answer"></div>
 			<div class="placeholder">
 				<i class="icon-music"></i>
 			</div>
 		</div>
 
 		<div class="two columns user">
+			<div class="answer"></div>
 			<div class="placeholder">
 				<i class="icon-music"></i>
 			</div>
 		</div>
 
 		<div class="two columns user">
+			<div class="answer"></div>
 			<div class="placeholder">
 				<i class="icon-music"></i>
 			</div>
 		</div>
 
 		<div class="two columns user">
+			<div class="answer"></div>
 			<div class="placeholder">
 				<i class="icon-music"></i>
 			</div>
 		</div>
 
 		<div class="two columns user">
+			<div class="answer"></div>
 			<div class="placeholder">
 				<i class="icon-music"></i>
 			</div>
-		</div>
+		</div>		
 
 		<div class="sixteen columns guess">
 			<h2>What is playing?</h2>

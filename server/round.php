@@ -22,6 +22,7 @@ class Round {
 
 	function pullRound() {
 
+
 		$randomTrack = $this->getRandomTrack();
 		
 		return "{ 'track': '" . $randomTrack->title . "', 
@@ -48,7 +49,6 @@ class Round {
 	function getRandomAnswer(){
 		$track = $this->getRandomTrack();
 		return $track->title;
-
 	}
 }
 

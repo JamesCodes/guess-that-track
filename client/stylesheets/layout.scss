@@ -57,6 +57,7 @@ body{
 
 h1, h2, h3, h4, h5, h6{
     @include novecento-bold;
+    color: #33FF99;
 }
 
 header{
@@ -72,9 +73,15 @@ header{
     }
 }
 
+.fb-login-button{
+    margin: 0 auto;
+    width: 152px;
+    display: block !important;
+}
+
 .game{
     text-align: center;
-    margin-bottom: 20px;
+    margin: 50px;
 
     .countdown{
         @include novecento-reg;
@@ -84,17 +91,70 @@ header{
             @include novecento-bold;
         }
     }
+
+    .countdown-bar{
+        width: 100%;
+        background: #000;
+        height: 50px;
+
+        .amount{
+            background: #33FF99;
+            height: 100%;
+            width: 0%;
+        }
+    }
+}
+
+.players{
+    text-align: center;
 }
 
 .user{
+    position: relative;
+
     .placeholder{
-        background: grey;
+        background: #000;
         padding: 20px 0 12px;
         margin-bottom: 20px;
         text-align: center;
 
         i{
             font-size: 3em;
+            color: #33FF99;
+        }
+    }
+
+    .answer{
+        height: 64px;
+        width: 100%;
+        position: absolute;
+        top: 0;
+            left: 0;
+
+        &.incorrect{
+            background: #FF2B36;
+
+            &:after{
+                content: 'wrong!';
+                @include novecento-reg;
+                text-align: center;
+                color: #000;
+                display: block;
+                padding-top: 21px;
+            }
+        }   
+
+        &.correct{
+            background: #4DFF35;
+
+            &:after{
+                content: 'right!';
+                @include novecento-reg;
+                text-align: center;
+                color: #000;
+                display: block;
+                padding-top: 21px;
+            }
         }
     }
 }
@@ -119,6 +179,12 @@ header{
                 min-width: 250px;
                 display: inline-block;
                 cursor: pointer;
+                @include transitions;
+
+                &:hover{
+                    background: #33FF99;
+                    color: #000;
+                }
             }
         }
     }
