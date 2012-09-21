@@ -7,30 +7,55 @@ var round = feeder.subscribe('rounds');
 function Game() {
 
 	this.name = "FB Game";
-	this.round = new Round({ "track": "Jump" , "mp3": "http://cdn-preview-a.deezer.com/stream/a4e149e52e2ffdc4f057661b40ba7ee3-1.mp3", "answers": [ "Imagine", "Go your own way", "We are young", "Take a walk" ] });
+	this.rounds = [];
+	this.round = 0;
+	this.myAnswer = "";
 	
 	this.renderRound = function() {
 
-		var answers = this.round.answers;
+		var thisRound = this.rounds[this.round]
+		var answers = thisRound.answers;
 		
 		// Add answers
 		for (var i = answers.length - 1; i >= 0; i--) {
 			$('.guess ul li:nth-child(' + (i + 1) + ') a').text(answers[i]);
 		};
 
-		console.log(this.round);
-		
-
-		//console.log(this.round.track);
+		// next round 
+		this.round++;
 	};
 	
 	this.setup = function() {
 		var closure = this;
 		round.bind('new', function(data) {
-			closure.round = new Round(data);
+
+			// parse response
+			data = JSON.parse(data);
+			console.log(data);
+
+			// Show Answer
+			if(closure.round>0) closure.showAnswer();
+
+			// New Round
+			closure.rounds.push(new Round(data));
 			closure.renderRound();
 
 		});
+	}
+
+	this.answer = function(answer) {
+		this.myAnswer = answer;
+	}
+
+	this.showAnswer = function(answer) {
+
+		lastRoundAnswer = this.rounds[this.round-1].track;
+
+		if(this.myAnswer==lastRoundAnswer) {
+			console.log('correct');
+		} else {
+			console.log('incorrect');
+		}
 	}
 }
 
