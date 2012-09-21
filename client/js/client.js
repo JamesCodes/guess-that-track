@@ -59,9 +59,10 @@ function Game() {
 		$('.guess a').bind("click", function(e) {
 			e.preventDefault();
 			closure.myAnswer = $(this).attr('data-track-id');
-			lastRoundAnswer = closure.rounds[this.round].track;
+			console.log(closure.rounds, closure.round-1);
+			RoundAnswer = closure.rounds[closure.round-1].track;
 
-			if(this.myAnswer==lastRoundAnswer) {
+			if(closure.myAnswer==RoundAnswer) {
 				$('.you .answer').addClass('correct');
 			} else {
 				$('.you .answer').addClass('incorrect');
