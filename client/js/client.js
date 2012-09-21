@@ -59,7 +59,13 @@ function Game() {
 		$('.guess a').bind("click", function(e) {
 			e.preventDefault();
 			closure.myAnswer = $(this).attr('data-track-id');
-			console.log("You answered:" + closure.myAnswer)
+			lastRoundAnswer = closure.rounds[this.round].track;
+
+			if(this.myAnswer==lastRoundAnswer) {
+				$('.you .answer').addClass('correct');
+			} else {
+				$('.you .answer').addClass('incorrect');
+			}
 		});
 	}
 

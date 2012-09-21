@@ -91,101 +91,117 @@
 			<h2>Who is playing</h2>
 		</div>
 
-		<div class="two columns user">
+		<div class="two columns user you">
+			<div class="answer"></div>
 			<div class="placeholder">
 				<i class="icon-music"></i>
 			</div>
 		</div>
 
 		<div class="two columns user">
+			<div class="answer"></div>
 			<div class="placeholder">
 				<i class="icon-music"></i>
 			</div>
 		</div>
 
 		<div class="two columns user">
+			<div class="answer"></div>
 			<div class="placeholder">
 				<i class="icon-music"></i>
 			</div>
 		</div>
 
 		<div class="two columns user">
+			<div class="answer"></div>
 			<div class="placeholder">
 				<i class="icon-music"></i>
 			</div>
 		</div>
 
 		<div class="two columns user">
+			<div class="answer"></div>
 			<div class="placeholder">
 				<i class="icon-music"></i>
 			</div>
 		</div>
 
 		<div class="two columns user">
+			<div class="answer"></div>
 			<div class="placeholder">
 				<i class="icon-music"></i>
 			</div>
 		</div>
 
 		<div class="two columns user">
+			<div class="answer"></div>
 			<div class="placeholder">
 				<i class="icon-music"></i>
 			</div>
 		</div>
 
 		<div class="two columns user">
+			<div class="answer"></div>
 			<div class="placeholder">
 				<i class="icon-music"></i>
 			</div>
 		</div>
 
 		<div class="two columns user">
+			<div class="answer"></div>
 			<div class="placeholder">
 				<i class="icon-music"></i>
 			</div>
 		</div>
 
 		<div class="two columns user">
+			<div class="answer"></div>
 			<div class="placeholder">
 				<i class="icon-music"></i>
 			</div>
 		</div>
 
 		<div class="two columns user">
+			<div class="answer"></div>
 			<div class="placeholder">
 				<i class="icon-music"></i>
 			</div>
 		</div>
 
 		<div class="two columns user">
+			<div class="answer"></div>
 			<div class="placeholder">
 				<i class="icon-music"></i>
 			</div>
 		</div>
 
 		<div class="two columns user">
+			<div class="answer"></div>
 			<div class="placeholder">
 				<i class="icon-music"></i>
 			</div>
 		</div>
 
 		<div class="two columns user">
+			<div class="answer"></div>
 			<div class="placeholder">
 				<i class="icon-music"></i>
 			</div>
 		</div>
 
 		<div class="two columns user">
+			<div class="answer"></div>
 			<div class="placeholder">
 				<i class="icon-music"></i>
 			</div>
 		</div>
 
 		<div class="two columns user">
+			<div class="answer"></div>
 			<div class="placeholder">
 				<i class="icon-music"></i>
 			</div>
-		</div>
+		</div>		
 
 		<div class="sixteen columns guess">
 			<h2>What is playing?</h2>
