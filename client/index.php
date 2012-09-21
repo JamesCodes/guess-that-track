@@ -21,6 +21,7 @@
 	<link rel="stylesheet" href="stylesheets/base.css">
 	<link rel="stylesheet" href="stylesheets/skeleton.css">
 	<link rel="stylesheet" href="stylesheets/layout.css">
+	<link rel="stylesheet" href="stylesheets/font-awesome.css" type="text/css" media="screen" />
 
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -33,9 +34,7 @@
 	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
 
-	<script type="text/javascript" src="jquery.js"></script>
-	<script type="text/javascript" src="pusher.js"></script>
-	<script type="text/javascript" src="test.js"></script>
+	<script data-main="js/app" src="js/require.js"></script>
 </head>
 <body>
 
@@ -47,27 +46,120 @@
 	<!-- Delete everything in this .container and get started on your own site! -->
 
 	<div class="container">
-		<div class="sixteen columns">
-			<h1 class="remove-bottom" style="margin-top: 40px">Guess That Track</h1>
-			<h5>Version 1.2</h5>
-			<hr />
+		<header class="sixteen columns">
+			<h1>Guess That Track</h1>
+			<h2>As quick as you can!</h2>
+		</header>
+
+		<div class="sixteen columns game">
+			<span class="countdown go">Go!</span>
+			<div id="player"></div>
 		</div>
-		<div class="one-third column">
-			<h3>About Skeleton?</h3>
-			<p>Skeleton is a small collection of well-organized CSS files that can help you rapidly develop sites that look beautiful at any size, be it a 17" laptop screen or an iPhone. It's based on a responsive grid, but also provides very basic CSS for typography, buttons, forms and media queries. Go ahead, resize this super basic page to see the grid in action.</p>
+
+		<div class="two columns user">
+			<div class="placeholder">
+				<i class="icon-music"></i>
+			</div>
 		</div>
-		<div class="one-third column">
-			<h3>Three Core Principles</h3>
-			<p>Skeleton is built on three core principles:</p>
-			<ul class="square">
-				<li><strong>A Responsive Grid Down To Mobile</strong>: Elegant scaling from a browser to tablets to mobile.</li>
-				<li><strong>Fast to Start</strong>: It's a tool for rapid development with best practices</li>
-				<li><strong>Style Agnostic</strong>: It provides the most basic, beautiful styles, but is meant to be overwritten.</li>
+
+		<div class="two columns user">
+			<div class="placeholder">
+				<i class="icon-music"></i>
+			</div>
+		</div>
+
+		<div class="two columns user">
+			<div class="placeholder">
+				<i class="icon-music"></i>
+			</div>
+		</div>
+
+		<div class="two columns user">
+			<div class="placeholder">
+				<i class="icon-music"></i>
+			</div>
+		</div>
+
+		<div class="two columns user">
+			<div class="placeholder">
+				<i class="icon-music"></i>
+			</div>
+		</div>
+
+		<div class="two columns user">
+			<div class="placeholder">
+				<i class="icon-music"></i>
+			</div>
+		</div>
+
+		<div class="two columns user">
+			<div class="placeholder">
+				<i class="icon-music"></i>
+			</div>
+		</div>
+
+		<div class="two columns user">
+			<div class="placeholder">
+				<i class="icon-music"></i>
+			</div>
+		</div>
+
+		<div class="two columns user">
+			<div class="placeholder">
+				<i class="icon-music"></i>
+			</div>
+		</div>
+
+		<div class="two columns user">
+			<div class="placeholder">
+				<i class="icon-music"></i>
+			</div>
+		</div>
+
+		<div class="two columns user">
+			<div class="placeholder">
+				<i class="icon-music"></i>
+			</div>
+		</div>
+
+		<div class="two columns user">
+			<div class="placeholder">
+				<i class="icon-music"></i>
+			</div>
+		</div>
+
+		<div class="two columns user">
+			<div class="placeholder">
+				<i class="icon-music"></i>
+			</div>
+		</div>
+
+		<div class="two columns user">
+			<div class="placeholder">
+				<i class="icon-music"></i>
+			</div>
+		</div>
+
+		<div class="two columns user">
+			<div class="placeholder">
+				<i class="icon-music"></i>
+			</div>
+		</div>
+
+		<div class="two columns user">
+			<div class="placeholder">
+				<i class="icon-music"></i>
+			</div>
+		</div>
+
+		<div class="sixteen columns guess">
+			<h2>What is playing?</h2>
+			<ul>
+				<li><a data-track-id="1">Track</a></li>
+				<li><a data-track-id="2">Track</a></li>
+				<li><a data-track-id="3">Track</a></li>
+				<li><a data-track-id="4">Track</a></li>
 			</ul>
-		</div>
-		<div class="one-third column">
-			<h3>Docs &amp; Support</h3>
-			<p>The easiest way to really get started with Skeleton is to check out the full docs and info at <a href="http://www.getskeleton.com">www.getskeleton.com.</a>. Skeleton is also open-source and has a <a href="https://github.com/dhgamache/skeleton">project on git</a>, so check that out if you want to report bugs or create a pull request. If you have any questions, thoughts, concerns or feedback, please don't hesitate to email me at <a href="mailto:hi@getskeleton.com">hi@getskeleton.com</a>.</p>
 		</div>
 
 	</div><!-- container -->
