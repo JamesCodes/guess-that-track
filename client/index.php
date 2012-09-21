@@ -73,6 +73,8 @@
 			   ref.parentNode.insertBefore(js, ref);
 			 }(document));
 			</script>
+
+			<div class="fb-login-button">Login with Facebook</div>
 		</div>
 
 		<div class="sixteen columns game">
