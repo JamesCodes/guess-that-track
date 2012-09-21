@@ -206,10 +206,10 @@
 		<div class="sixteen columns guess">
 			<h2>What is playing?</h2>
 			<ul>
-				<li><a data-track-id="1">Track</a></li>
-				<li><a data-track-id="2">Track</a></li>
-				<li><a data-track-id="3">Track</a></li>
-				<li><a data-track-id="4">Track</a></li>
+				<li><a data-track-id="1">?</a></li>
+				<li><a data-track-id="2">?</a></li>
+				<li><a data-track-id="3">?</a></li>
+				<li><a data-track-id="4">?</a></li>
 			</ul>
 		</div>
 
