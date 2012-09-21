@@ -81,6 +81,7 @@
 
 		<div class="sixteen columns game">
 			<span class="countdown go">Go!</span>
+			<div class="countdown-circle"></div>
 			<div id="player"></div>
 		</div>
 

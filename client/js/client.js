@@ -18,7 +18,7 @@ function Game() {
 		
 		// Add answers
 		for (var i = answers.length - 1; i >= 0; i--) {
-			$('.guess ul li:nth-child(' + (i + 1) + ') a').text(answers[i]);
+			$('.guess ul li:nth-child(' + (i + 1) + ') a').text(answers[i]).attr('data-track-id', answers[i])
 		};
 
 		// next round 

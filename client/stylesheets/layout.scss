@@ -91,6 +91,19 @@ header{
             @include novecento-bold;
         }
     }
+
+    .countdown-circle{
+    margin: 0 auto;
+        width:0;
+     height:0;
+     border-right:60px solid #33FF99;
+     border-top:60px solid #33FF99;
+     border-left:60px solid transparent;
+     border-bottom:60px solid #33FF99;
+     border-radius: 60px;
+     -moz-border-radius: 60px;
+     -webkit-border-radius: 60px;
+    }
 }
 
 .players{
